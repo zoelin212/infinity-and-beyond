@@ -1,0 +1,22 @@
+@-webkit-keyframes fadein { 0% { opacity: 0 }}
+  
+@keyframes fadein { 0% { opacity: 0 }}
+  
+body {
+    /* background: #18283d url('https://c1.staticflickr.com/1/689/21586270024_fcc676b4ff_h.jpg') center center no-repeat;  */
+    background-size: cover; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    min-height: 100vh;}
+
+canvas { 
+    position: absolute;
+    z-index: 1;
+    /* top: 14%; */
+    top: 0;
+    display: block; 
+    filter: blur(6px) drop-shadow(0 0 30px rgba(51,180,172,1)); transform-origin: 0 120%; 
+    transform: skewX(-20deg); 
+    -webkit-animation: fadein 6s 1; 
+    animation: fadein 6s 1; }
